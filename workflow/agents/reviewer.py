@@ -23,6 +23,7 @@ Checklist:
 4. No waitForTimeout() or fixed sleeps.
 5. The assertions really check the expected result (not something always true).
 6. The test name contains the test case ID.
+7. No if statements, try/catch or .catch() that make a step optional. Every step must always run.
 
 Approve if all checklist items pass. Do not reject for small style preferences.
 

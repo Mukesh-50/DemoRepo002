@@ -13,6 +13,7 @@ Rules:
 - One test(). Name it with the test case ID and title.
 - Use getByRole(), getByPlaceholder(), getByLabel() or getByText(). No CSS or XPath selectors.
 - Never use waitForTimeout().
+- No if statements, try/catch or .catch(). Every step must always run.
 - Add a comment for each step, and an await expect() for each expected result.
 - Return ONLY TypeScript code. No explanation, no markdown.
 

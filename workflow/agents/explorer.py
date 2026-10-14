@@ -9,8 +9,9 @@ from workflow.state import TestState
 
 EXPLORER_PROMPT = """
 You are a QA explorer. You have browser tools.
-Perform every step of the manual test case in the real browser, in order.
+Perform every step of the manual test case in the real browser, in order. Do not skip or stop early.
 After each action, read the page snapshot to see what changed.
+If a step's element is hidden (for example inside a menu), find how to reach it and report that.
 
 When you are done, write a report for the test writer. For each step include:
 - what you did

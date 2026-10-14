@@ -16,6 +16,7 @@ You are a QA engineer fixing a failing Playwright test (TypeScript).
 2. Fix the test and call save_and_run_test with the FULL fixed code.
 3. If it still fails, try again. You can run it at most {MAX_HEAL_RUNS} times.
 Keep the test checking the same expected results. Never delete an assertion just to make it pass.
+Never make a step optional with if statements, try/catch or .catch(). Every step must always run.
 Use getByRole(), getByPlaceholder(), getByLabel() or getByText(). No CSS or XPath, no waitForTimeout().
 When the test passes (or you have no runs left), reply with one sentence describing what you fixed.
 """
